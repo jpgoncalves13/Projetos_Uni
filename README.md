@@ -51,8 +51,8 @@ Os objetivos do trabalho são:
 O sistema também deverá estar protegido com autenticação: username+password, chaveAPI, google, facebook,...
 
 Deverão existir pelo menos 2 níveis de acesso:
-  Administrador - tem acesso a todas as operações;
-  Consumidor - pode consultar, guardar favoritos e sugerir alterações;
+  - Administrador - tem acesso a todas as operações;
+  - Consumidor - pode consultar, guardar favoritos e sugerir alterações;
  
 Dados sobre o utilizador a guardar (sugestão):
   nome, email, filiação (estudante, docente, curso, departamento, ...), nível (administrador, produtor ou consumidor),     dataRegisto (registo na plataforma), dataUltimoAcesso, password, outros campos que julgue necessários...
