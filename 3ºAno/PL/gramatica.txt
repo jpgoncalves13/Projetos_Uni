@@ -1,0 +1,102 @@
+
+lines : lines line
+      | line
+
+line : tagline
+     | code
+     | comment
+     | conditional
+     | iteration
+     | switch
+     | DOCTYPE
+
+code : code_lines
+     | code_lines INDENT lines DEDENT
+
+code_lines : JSCODE 
+           | JSCODE code_text 
+
+code_text : TEXT 
+          | code_text TEXT 
+
+switch : CASE CONDITION INDENT casesdefault DEDENT
+
+casesdefault : cases DEFAULT INDENT lines DEDENT
+             | cases
+             | DEFAULT INDENT lines DEDENT
+
+cases : cases case 
+      | case  
+
+case : WHEN CONDITION INDENT lines DEDENT
+     | WHEN CONDITION
+
+comment : COMMENT comment_text
+        | COMMENT
+
+comment_text : comment_text TEXT
+             | TEXT   
+
+conditional : conditional_begin conditional_middle conditional_final
+            | conditional_begin conditional_final
+            | conditional_begin conditional_middle
+            | conditional_begin
+
+conditional_begin : IF CONDITION INDENT lines DEDENT
+                  | IF CONDITION
+                  | UNLESS CONDITION INDENT lines DEDENT 
+                  | UNLESS CONDITION
+
+conditional_middle : conditional_middle ELSEIF CONDITION INDENT lines DEDENT 
+                   | conditional_middle ELSEIF CONDITION
+                   | ELSEIF CONDITION INDENT lines DEDENT 
+                   | ELSEIF CONDITION
+
+conditional_final : ELSE INDENT lines DEDENT
+                  | ELSE 
+
+
+iteration : EACH IDENTIFIER IN JSCODE INDENT lines DEDENT
+          | EACH IDENTIFIER COMMA IDENTIFIER IN JSCODE INDENT lines DEDENT
+          | WHILE CONDITION INDENT lines DEDENT
+
+tagline : tag content INDENT lines DEDENT 
+        | tag INDENT lines DEDENT 
+        | tag content 
+        | tag BAR
+        | tag DOT NEWLINE block_text
+        | tag
+
+tag : TAG attributes
+    | TAG 
+
+attributes : attribute_list ID attribute_list
+           | attribute_list ID
+           | attribute_list
+           | ID attribute_list
+           | ID
+
+attribute_list : attribute_list attribute 
+               | attribute
+
+attribute : CLASS
+          | ATTRIBUTES
+
+content : EQUALS JSCODE
+        | text
+
+interpolation : JSCODE
+
+block_text : block_text BEGININTERP interp ENDINTERP
+           | blocK_text TEXT
+           | block_text NEWLINE
+           | BEGININTERP interp ENDINTERP
+           | TEXT
+
+text : text BEGININTERP interp ENDINTERP
+     | text TEXT
+     | BEGININTERP interp ENDINTERP
+     | TEXT
+
+interp : interpolation
+       | tagline

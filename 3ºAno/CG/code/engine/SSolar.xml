@@ -1,0 +1,348 @@
+<world>
+    <window width="512" height="512" />
+    <camera>
+        <position x="10000" y="10000" z="10000" />
+        <lookAt x="0" y="0" z="0" />
+        <up x="0" y="1" z="0" />
+        <projection fov="60" near="1" far="100000" />
+    </camera>
+	<lights>
+		<light type="point" posx="0" posy="0" posz="0" />
+	</lights>
+    <group>
+        <models> <!-- Asteroides -->
+           <model file="cintura_de_asteroides.3d"></model> <!-- generator ring 4300 3300 1000 1 2 -10 10 cintura_de_asteroides.3d sphere 10 10 -->
+		    <model file="cintura_de_kuiper.3d"></model> <!-- generator ring 50000 30000 20000 20 30 -1 1 cintura_de_kuiper.3d sphere 10 10 -->
+        </models>
+        <group> <!-- Cometa -->
+            <transform>
+                <translate x="5000" y="0" z="0"/>
+            </transform>
+            <group>
+                <transform>
+                    <translate time="1500" align="true" show="false">
+                        <pointSet type="ellipse" num_points="16" a="24000" b="18000" angleX="0" angleY="0" angleZ="35"/>
+                    </translate>
+                    <scale x="10" y="10" z="10"/>
+                </transform>
+                <models>
+                    <model label="Cometa" file="comet_10.3d" red="0.72" green="0.74" blue="0.77"/>
+                </models>
+            </group>
+        </group>
+        <group> <!-- Sol -->
+            <transform>
+                <scale x="1100" y="1100" z="1100"/>
+            </transform>
+            <models> <!-- SOL -->
+				<model label="Sol" file="sphere_1_30_30.3d"> 
+					<texture file = "sol.jpg"/>
+					<color>
+						<diffuse R="200" G="200" B="000" />
+						<ambient R="50" G="50" B="00" />
+						<specular R="0" G="0" B="0" />
+						<emissive R="255" G="255" B="255" />
+						<shininess value="0" />
+					</color>
+				</model>
+            </models>
+        </group>
+        <group> <!-- Mercúrio -->
+            <transform>
+                <translate time="87.97" align="false">
+                    <pointSet type="ellipse" num_points="16" a="1790" b="1490" angleX="0" angleY="0" angleZ="0"/>
+                </translate>
+                <rotate time="58.6" x="0" y="1" z="0"/>
+                <scale x="3.8" y="3.8" z="3.8"/>
+            </transform>
+            <models>
+				<model label="Mercurio" file="sphere_1_30_30.3d"> 
+					<texture file = "mercurio.jpg" /> 
+				</model>
+			</models>
+        </group>
+        <group> <!-- Vénus -->
+            <transform>
+                <translate time="224.70" align="false">
+                    <pointSet type="ellipse" num_points="16" a="2120" b="1820" angleX="0" angleY="0" angleZ="0"/>
+                </translate>
+                <rotate time="243" x="0" y="1" z="0"/>
+                <scale x="9.5" y="9.5" z="9.5"/>
+            </transform>
+            <models>
+				<model label="Venus" file="sphere_1_30_30.3d"> 
+					<texture file = "venus_atmosphere.jpg" /> 
+				</model>
+            </models>
+        </group>
+        <group> <!-- Terra -->
+            <transform>
+                <translate time="365.25" align="false">
+                    <pointSet type="ellipse" num_points="16" a="2420" b="2120" angleX="0" angleY="0" angleZ="0"/>
+                </translate>
+            </transform>
+            <group>
+                <transform>
+                    <rotate time="1" x="0" y="1" z="0"/>
+                    <scale x="10" y="10" z="10"/>
+                </transform>
+                <models>
+					<model label="Terra" file="sphere_1_30_30.3d"> 
+						<texture file = "earth.jpg" /> 
+					</model>
+                </models>
+            </group>
+            <group> <!-- Lua -->
+                <transform>
+					<translate time="27.32" align="false">
+						<pointSet type="ellipse" num_points="16" a="38.7" b="35.7" angleX="45" angleY="0" angleZ="0"/>
+					</translate>
+                    <rotate time="27.23" x="0" y="1" z="0"/>
+                    <scale x="2.7" y="2.7" z="2.7"/>
+                </transform>
+                <models>
+					<model label="Lua" file="sphere_1_30_30.3d"> 
+						<texture file = "lua_2k.jpg"/> 
+					</model>
+                </models>
+            </group>
+        </group>
+        <group> <!-- Marte -->
+            <transform>
+                <translate time="687.00" align="false">
+                    <pointSet type="ellipse" num_points="16" a="2920" b="2620" angleX="0" angleY="0" angleZ="0"/>
+                </translate>
+            </transform>
+            <group>
+                <transform>
+                    <rotate time="1.03" x="0" y="1" z="0"/>
+                    <scale x="5.3" y="5.3" z="5.3"/>
+                </transform>
+                <models>
+					<model label="Marte" file="sphere_1_30_30.3d">
+						<texture file = "marte_2k.jpg"/>
+					</model>
+                </models>
+            </group>
+            <group> <!-- Fobos -->
+                <transform>
+                    <translate time="0.32" align="false">
+                        <pointSet type="ellipse" num_points="16" a="8.9626" b="5.9626" angleX="45" angleY="0" angleZ="0"/>
+                    </translate>
+                    <rotate time="0.32" x="0" y="1" z="0"/>
+                    <scale x="0.0054" y="0.0054" z="0.0054"/>
+                </transform>
+                <models>
+                    <model label="Fobos" file="sphere_1_30_30.3d" red="1" green="0" blue="0" />
+                </models>
+            </group>
+            <group> <!-- Deimos -->
+                <transform>
+                    <translate time="1.26" align="false">
+                        <pointSet type="ellipse" num_points="16" a="9.87" b="6.87" angleX="0" angleY="0" angleZ="45"/>
+                    </translate>
+                    <rotate time="1.26" x="0" y="1" z="0"/>
+                    <scale x="0.0015" y="0.0015" z="0.0015"/>
+                </transform>
+                <models>
+                    <model label="Deimos" file="sphere_1_30_30.3d" red="1" green="0" blue="0" />
+                </models>
+            </group>
+        </group>
+        <group> <!-- Júpiter -->
+            <transform>
+                <translate time="4332.59" align="false">
+                    <pointSet type="ellipse" num_points="16" a="6600" b="6300" angleX="0" angleY="0" angleZ="0"/>
+                </translate>
+            </transform>
+            <group>
+                <transform>
+                    <rotate time="0.41" x="0" y="1" z="0"/>
+                    <scale x="112" y="112" z="112"/>
+                </transform>
+                <models>
+					<model label="Jupiter" file="sphere_1_30_30.3d">
+						<texture file = "jupiter.jpg"/>
+					</model>
+                </models>
+            </group>
+            <group> <!-- Europa -->
+                <transform>
+                    <translate time="3.55" align="false">
+                        <pointSet type="ellipse" num_points="16" a="187" b="157" angleX="45" angleY="0" angleZ="0"/>
+                    </translate>
+                    <rotate time="3.55" x="0" y="1" z="0"/>
+                    <scale x="2.45" y="2.45" z="2.45"/>
+                </transform>
+                <models>
+                    <model label="Europa" file="sphere_1_30_30.3d" red="1" green="0.9" blue="0.93" />
+                </models>
+            </group>
+            <group> <!-- Ganimedes -->
+                <transform>
+                    <translate time="7.16" align="false">
+                        <pointSet type="ellipse" num_points="16" a="213.6" b="183.6" angleX="0" angleY="0" angleZ="45"/>
+                    </translate>
+                    <rotate time="7.16" x="0" y="1" z="0"/>
+                    <scale x="4.135" y="4.135" z="4.135"/>
+                </transform>
+                <models>
+                    <model label="Ganimedes" file="sphere_1_30_30.3d" red="1" green="0.65" blue="0.3" />
+                </models>
+            </group>
+            <group> <!-- Calisto -->
+                <transform>
+                    <translate time="16.69" align="false">
+                        <pointSet type="ellipse" num_points="16" a="268" b="238" angleX="45" angleY="0" angleZ="45"/>
+                    </translate>
+                    <rotate time="16.69" x="0" y="1" z="0"/>
+                    <scale x="3.78" y="3.78" z="3.78"/>
+                </transform>
+                <models>
+                    <model label="Calisto" file="sphere_1_30_30.3d" red="0" green="0.07" blue="0.4" />
+                </models>
+            </group>
+            <group> <!-- IO -->
+                <transform>
+                    <translate time="1.77" align="false">
+                        <pointSet type="ellipse" num_points="16" a="170.2" b="140.2" angleX="15" angleY="0" angleZ="0"/>
+                    </translate>
+                    <rotate time="1.77" x="0" y="1" z="0"/>
+                    <scale x="2.86" y="2.86" z="2.86"/>
+                </transform>
+                <models>
+                    <model label="Io" file="sphere_1_30_30.3d" red="0.9" green="0.9" blue="0" />
+                </models>
+            </group>
+        </group>
+        <group> <!-- Saturno -->
+            <transform>
+                <translate time="10759.22" align="false">
+                    <pointSet type="ellipse" num_points="16" a="10980" b="10680" angleX="0" angleY="0" angleZ="0"/>
+                </translate>
+            </transform>
+            <group>
+                <transform>
+                    <scale x="94" y="94" z="94"/>
+                    <rotate time="0.45" x="0" y="1" z="0"/>
+                </transform>
+                <models>
+					<model label="Saturno" file="sphere_1_30_30.3d">
+						<texture file = "saturno.jpg"/>
+					</model>
+					<model file="torus_1.2_2_100_0.3d"> 
+						<texture file = "saturnringcolor.jpg"/> 
+				    </model>
+                </models>
+            </group>
+            <group> <!-- Titã -->
+                <transform>
+                    <translate time="15.95" align="false">
+                        <pointSet type="ellipse" num_points="16" a="205.8" b="175.8" angleX="65" angleY="0" angleZ="0"/>
+                    </translate>
+                    <rotate time="15.95" x="0" y="1" z="0"/>
+                    <scale x="4.049" y="4.049" z="4.049"/>
+                </transform>
+                <models>
+                    <model label="Tita" file="sphere_1_30_30.3d" red="0" green="0.5" blue="0.17"/>
+                </models>
+            </group>
+            <group> <!-- Reia -->
+                <transform>
+                    <translate time="4.52" align="false">
+                        <pointSet type="ellipse" num_points="16" a="159.3" b="129.3" angleX="0" angleY="0" angleZ="65"/>
+                    </translate>
+                    <rotate time="4.52" x="0" y="1" z="0"/>
+                    <scale x="1.235" y="1.235" z="1.235"/>
+                </transform>
+                <models>
+                    <model label="Reia" file="sphere_1_30_30.3d" red="1" green="1" blue="1"/>
+                </models>
+            </group>
+            <group> <!-- Tetis -->
+                <transform>
+                    <translate time="1.89" align="false">
+                        <pointSet type="ellipse" num_points="16" a="143.7" b="113.7" angleX="15" angleY="0" angleZ="0"/>
+                    </translate>
+                    <rotate time="1.89" x="0" y="1" z="0"/>
+                    <scale x="1.237" y="1.237" z="1.237"/>
+                </transform>
+                <models>
+                    <model label="Tetis" file="sphere_1_30_30.3d" red="1" green="0.95" blue="0.9" />
+                </models>
+            </group>
+        </group>
+        <group> <!-- Urano -->
+            <transform>
+                <translate time="30685.40" align="false">
+                    <pointSet type="ellipse" num_points="16" a="20580" b="20280" angleX="0" angleY="0" angleZ="0"/>
+                </translate>
+            </transform>
+            <group>
+                <transform>
+                    <scale x="40" y="40" z="40"/>
+                    <rotate time="0.72" x="0" y="1" z="0"/>
+                </transform>
+                <models>
+					<model label="Urano" file="sphere_1_30_30.3d">
+						<texture file = "urano.jpg"/>
+					</model>
+                </models>
+            </group>
+            <group> <!-- Titania -->
+                <transform>
+                    <translate time="8.71" align="false">
+                        <pointSet type="ellipse" num_points="16" a="99.2" b="69.2" angleX="0" angleY="0" angleZ="35"/>
+                    </translate>
+                    <rotate time="8.71" x="0" y="1" z="0"/>
+                    <scale x="1.233" y="1.233" z="1.233"/>
+                </transform>
+                <models>
+                    <model label="Titania" file="sphere_1_30_30.3d" red="0.9" green="0.93" blue="1" />
+                </models>
+            </group>
+            <group> <!-- Oberon -->
+                <transform>
+                    <translate time="13.46" align="false">
+                        <pointSet type="ellipse" num_points="16" a="109.1" b="79.1" angleX="35" angleY="0" angleZ="0"/>
+                    </translate>
+                    <rotate time="13.46" x="0" y="1" z="0"/>
+                    <scale x="1.197" y="1.197" z="1.197"/>
+                </transform>
+                <models>
+                    <model label="Oberon" file="sphere_1_30_30.3d" red="0.6" green="0.8" blue="1" />
+                </models>
+            </group>
+        </group>
+        <group> <!-- Neptuno -->
+            <transform>
+                <translate time="60190.03" align="false">
+                    <pointSet type="ellipse" num_points="16" a="31307" b="31107" angleX="0" angleY="0" angleZ="0"/>
+                </translate>
+            </transform>
+            <group>
+                <transform>
+                    <rotate time="0.67" x="0" y="1" z="0"/>
+                    <scale x="38" y="38" z="38"/>
+                </transform>
+                <models>
+					<model label="Neptuno" file="sphere_1_30_30.3d">
+						<texture file = "neptuno.jpg"/>
+					</model>
+                </models>
+            </group>
+            <group> <!-- Tritão -->
+                <transform>
+                    <translate time="5.88" align="false">
+                        <pointSet type="ellipse" num_points="16" a="91.7" b="61.7" angleX="25" angleY="0" angleZ="0"/>
+                    </translate>
+                    <rotate time="5.88" x="0" y="1" z="0"/>
+                    <scale x="2.228" y="2.228" z="2.228"/>
+                </transform>
+                <models>
+                    <model label="Tritao" file="sphere_1_30_30.3d" red="1" green="0.9" blue="0.9" />
+                </models>
+            </group>
+        </group>
+    </group>
+</world>

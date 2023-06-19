@@ -1,0 +1,22 @@
+Definimos 3 probabilidades: - probabilidade de terminar a volta (não avariar)
+			    - probabilidade de se despistar num setor
+			    - probabilidade de ultrapassar o seguinte num setor
+			    
+	Probabilidade de Terminar a volta:
+		Depende de: - fiabilidade (valor base)
+			    - modo do motor (acrescento) - Normal -> -10%
+			    				 - Conservador -> -5%
+			    				 - Agressivo -> -15% 
+	
+	Probabilidade de se despistar:
+		Depende de: - gdu/setor e SVA -> gdu alto e SVA alto -> maior probabilidade
+					      -> gdu baixo e SVA baixo -> menor probabilidade
+			    - CTS e estado do tempo
+			    - estado dos pneus / tipo dos pneus
+	
+	Probabilidade de ultrapassar:
+		Depende de: - gdu/tipo de setor
+			    - tipo de setor e downforce
+			    - categorias dos carros
+			    - SVAs dos carros
+			    - estado dos pneus / tipo dos pneus

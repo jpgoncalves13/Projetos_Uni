@@ -1,0 +1,106 @@
+{ 2022-12-29T15:35:27.795808 EV @ ../Files/dataBaseSPReverse.txt
+ ../Files/dataBaseSPReverse.txt
+ ../Files/logFileSPReverse.txt }
+{ 2022-12-29T15:42:15.811411 EV @ ../Files/dataBaseSPReverse.txt
+ ../Files/dataBaseSPReverse.txt
+ ../Files/logFileSPReverse.txt }
+{ 2022-12-29T16:10:08.317558 QR/QE 10.0.41.10:3332 57235 Q+R 0 0 0 0 ip.in-address.reverse. PTR 10.0.42.10 }
+{ 2022-12-29T16:24:27.886689 EV @ ../Files/dataBaseSPReverse.txt
+ ../Files/dataBaseSPReverse.txt
+ ../Files/logFileSPReverse.txt }
+{ 2022-12-29T16:27:21.561980 EV @ ../Files/dataBaseSPReverse.txt
+ ../Files/dataBaseSPReverse.txt
+ ../Files/logFileSPReverse.txt }
+{ 2022-12-29T16:27:25.981292 QR/QE 10.0.41.10:3332 39553 Q+R 0 0 0 0 ip.in-address.reverse. PTR 10.0.42.10 }
+{ 2022-12-29T16:28:02.413019 EV @ ../Files/dataBaseSPReverse.txt
+ ../Files/dataBaseSPReverse.txt
+ ../Files/logFileSPReverse.txt }
+{ 2022-12-29T16:47:01.183282 EV @ ../Files/dataBaseSPReverse.txt
+ ../Files/dataBaseSPReverse.txt
+ ../Files/logFileSPReverse.txt }
+{ 2022-12-29T16:47:06.140427 QR/QE 10.0.41.10:3332 11857 Q+R 0 0 0 0 ip.in-address.reverse. PTR 10.0.42.10 }
+{ 2022-12-29T16:47:06.140970 RP\RR 10.0.13.20:3332 # Header
+MESSAGE-ID = 11857,FLAGS = R+A,RESPONSE-CODE = 0
+N-VALUES = 1 , N-AUTHORITIES = 0 , N-EXTRA-VALUES = 0;
+# Data: Query Info
+QUERY-INFO.NAME =  @ , QUERY-INFO.TYPE = PTR ;
+# Data: List of Response, Authorities and Extra Values
+RESPONSE-VALUES = LEIum3 }
+{ 2022-12-29T16:55:46.278781 QR/QE 10.0.41.10:3332 39069 Q+R 0 0 0 0 ip.in-address.reverse. PTR 10.0.29.20 }
+{ 2022-12-29T16:55:46.279354 RP\RR 10.0.13.20:3332 # Header
+MESSAGE-ID = 39069,FLAGS = R+A,RESPONSE-CODE = 0
+N-VALUES = 1 , N-AUTHORITIES = 0 , N-EXTRA-VALUES = 0;
+# Data: Query Info
+QUERY-INFO.NAME =  @ , QUERY-INFO.TYPE = PTR ;
+# Data: List of Response, Authorities and Extra Values }
+{ 2022-12-29T16:56:06.444556 QR/QE 10.0.41.10:3332 65206 Q+R 0 0 0 0 ip.in-address.reverse. PTR 20.29.0.10 }
+{ 2022-12-29T16:56:06.444892 RP\RR 10.0.13.20:3332 # Header
+MESSAGE-ID = 65206,FLAGS = R+A,RESPONSE-CODE = 0
+N-VALUES = 1 , N-AUTHORITIES = 0 , N-EXTRA-VALUES = 0;
+# Data: Query Info
+QUERY-INFO.NAME =  @ , QUERY-INFO.TYPE = PTR ;
+# Data: List of Response, Authorities and Extra Values }
+{ 2022-12-29T17:43:38.277878 EV @ ../Files/dataBaseSPReverse.txt
+ ../Files/dataBaseSPReverse.txt
+ ../Files/logFileSPReverse.txt }
+{ 2022-12-29T17:55:03.662350 QR/QE 10.0.41.10:3332 37312 Q+R 0 0 0 0 ip.in-address.reverse. PTR 10.46.0.10 }
+{ 2022-12-29T17:55:03.662580 RP\RR 10.0.13.20:3332 # Header
+MESSAGE-ID = 37312,FLAGS = R+A,RESPONSE-CODE = 0
+N-VALUES = 1 , N-AUTHORITIES = 0 , N-EXTRA-VALUES = 0;
+# Data: Query Info
+QUERY-INFO.NAME =  @ , QUERY-INFO.TYPE = PTR ;
+# Data: List of Response, Authorities and Extra Values
+RESPONSE-VALUES = UAmx }
+{ 2023-01-02T18:20:45.481118 EV @ ../Files/dataBaseSPReverse.txt
+ ../Files/dataBaseSPReverse.txt
+ ../Files/logFileSPReverse.txt }
+{ 2023-01-02T18:22:06.385066 QR/QE 10.0.41.10:3332 63043 Q+R 0 0 0 0 ip.in-address.reverse. PTR 10.46.0.10 }
+{ 2023-01-02T18:22:06.385298 RP\RR 10.0.13.20:3332 # Header
+MESSAGE-ID = 63043,FLAGS = R+A,RESPONSE-CODE = 0
+N-VALUES = 1 , N-AUTHORITIES = 0 , N-EXTRA-VALUES = 0;
+# Data: Query Info
+QUERY-INFO.NAME =  @ , QUERY-INFO.TYPE = PTR ;
+# Data: List of Response, Authorities and Extra Values
+RESPONSE-VALUES = UAmx }
+{ 2023-01-02T18:22:24.007561 QR/QE 10.0.41.10:3332 4955 Q+R 0 0 0 0 ip.in-address.reverse. PTR 2.33.0.10 }
+{ 2023-01-02T18:22:24.012661 RP\RR 10.0.13.20:3332 # Header
+MESSAGE-ID = 4955,FLAGS = R+A,RESPONSE-CODE = 0
+N-VALUES = 1 , N-AUTHORITIES = 0 , N-EXTRA-VALUES = 0;
+# Data: Query Info
+QUERY-INFO.NAME =  @ , QUERY-INFO.TYPE = PTR ;
+# Data: List of Response, Authorities and Extra Values }
+{ 2023-01-02T18:23:35.339467 QR/QE 10.0.41.10:3332 3289 Q+R 0 0 0 0 ip.in-address.reverse. PTR 10.47.0.10 }
+{ 2023-01-02T18:23:35.339975 RP\RR 10.0.13.20:3332 # Header
+MESSAGE-ID = 3289,FLAGS = R+A,RESPONSE-CODE = 0
+N-VALUES = 1 , N-AUTHORITIES = 0 , N-EXTRA-VALUES = 0;
+# Data: Query Info
+QUERY-INFO.NAME =  @ , QUERY-INFO.TYPE = PTR ;
+# Data: List of Response, Authorities and Extra Values
+RESPONSE-VALUES = UCmx }
+{ 2023-01-02T22:59:56.916558 EV @ ../Files/dataBaseSPReverse.txt
+ ../Files/dataBaseSPReverse.txt
+ ../Files/logFileSPReverse.txt }
+{ 2023-01-02T23:03:32.989555 QR/QE 10.0.41.10:3332 52162 Q+R 0 0 0 0 ip.in-address.reverse. PTR 10.46.0.10 }
+{ 2023-01-02T23:03:32.990694 RP\RR 10.0.13.20:3332 # Header
+MESSAGE-ID = 52162,FLAGS = R+A,RESPONSE-CODE = 0
+N-VALUES = 1 , N-AUTHORITIES = 0 , N-EXTRA-VALUES = 0;
+# Data: Query Info
+QUERY-INFO.NAME =  @ , QUERY-INFO.TYPE = PTR ;
+# Data: List of Response, Authorities and Extra Values
+RESPONSE-VALUES = UAmx }
+{ 2023-01-02T23:03:45.606612 QR/QE 10.0.41.10:3332 40716 Q+R 0 0 0 0 ip.in-address.reverse. PTR 10.47.0.10 }
+{ 2023-01-02T23:03:45.607012 RP\RR 10.0.13.20:3332 # Header
+MESSAGE-ID = 40716,FLAGS = R+A,RESPONSE-CODE = 0
+N-VALUES = 1 , N-AUTHORITIES = 0 , N-EXTRA-VALUES = 0;
+# Data: Query Info
+QUERY-INFO.NAME =  @ , QUERY-INFO.TYPE = PTR ;
+# Data: List of Response, Authorities and Extra Values
+RESPONSE-VALUES = UCmx }
+{ 2023-01-02T23:04:02.790401 QR/QE 10.0.41.10:3332 8958 Q+R 0 0 0 0 ip.in-address.reverse. PTR 10.21.0.10 }
+{ 2023-01-02T23:04:02.790845 RP\RR 10.0.13.20:3332 # Header
+MESSAGE-ID = 8958,FLAGS = R+A,RESPONSE-CODE = 0
+N-VALUES = 1 , N-AUTHORITIES = 0 , N-EXTRA-VALUES = 0;
+# Data: Query Info
+QUERY-INFO.NAME =  @ , QUERY-INFO.TYPE = PTR ;
+# Data: List of Response, Authorities and Extra Values
+RESPONSE-VALUES = sr.SRuc.UCoimbra. }

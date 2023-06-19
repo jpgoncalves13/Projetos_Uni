@@ -1,0 +1,23 @@
+-->Fornecedores
+Fornecedor:<NomeFornecedor>,<formula>
+Fornecedor:<NomeFornecedor>
+
+--> Cada casa tem um proprietario unico com um nif unico, e usa um fornecedor existente
+CasaInteligente:<NomeProprietario>,<NifProprietario>,<NomeFornecedor>
+
+-- Após cada casa, é listada uma sequência de divisões, cada uma seguida das devices (SmartBulb, SmartCamera, SmartSpeaker) que lá estão registadas
+Divisao:<Divisao>
+
+--> Como adicionar devices: (Os valores de consumo representam o consumo base de 1 dia, em kWh, desse dispositivo)
+
+-- Tamanho define a quantidade de segundos de vídeo gerado pela SmartCamera
+SmartCamera:<Resolution>,<fileSize>,<consumption>
+SmartCamera:<on>,<custo>,<Resolution>,<fileSize>,<consumption>
+
+-- Volume é um valor entre 0 a 100
+SmartSpeaker:<on>,<custo>,<Volume>,<CanalRadio>,<Marca>,<Consumo>
+SmartSpeaker:<Volume>,<CanalRadio>,<Marca>,<Consumo>
+
+-- Diametro é representado em cm
+SmartBulb:<on>,<custo>,<Tonalidade>,<Diametro>,<Consumo>
+SmartBulb:<Tonalidade>,<Diametro>,<Consumo>

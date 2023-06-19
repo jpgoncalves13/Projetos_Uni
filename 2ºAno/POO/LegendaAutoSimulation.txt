@@ -1,0 +1,12 @@
+-- As datas são representadas sempre no seguinte formato: (yyyy.MM.dd)
+
+-- Opções de alterações nas casas e/ou fornecedores
+data, idCasa, idDispositivo, ligar
+data, idCasa, idDispositivo, desligar
+data, idCasa, ligar
+data, idCasa, desligar
+data, idCasa, novoForncedor
+data, nomeFornecedor, valorBaseKw, imposto
+
+-- Como avançar no tempo
+Avançar, dataInicio, diasAvançar

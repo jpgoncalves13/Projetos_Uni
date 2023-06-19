@@ -1,0 +1,9 @@
+# deve ser colocada no bin 
+
+for ((i=0;i<$1;i++))
+do 
+    echo "./sdstore proc-file -p 3 ../README.md ../tmp/r${i} bcompress gcompress encrypt decrypt gdecompress bdecompress"
+
+    ./sdstore proc-file -p 3 ../README.md ../tmp/r${i} bcompress gcompress encrypt decrypt gdecompress bdecompress
+
+done

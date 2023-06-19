@@ -1,0 +1,10 @@
+{ 2022-12-08T23:06:24.509711 EV @ ../Files/ConfigFile-UAlg-LEIualg1.txt ../Files/dataBaseLEIualg1.txt
+ ../Files/logFileLEIualg1.txt }
+{ 2022-12-20T16:08:38.089680 EV @ ../Files/ConfigFile-UAlg-LEIualg1.txt ../Files/dataBaseLEIualg1.txt
+ ../Files/logFileLEIualg1.txt }
+{ 2022-12-29T17:33:41.547303 EV @ ../Files/ConfigFile-UAlg-LEIualg1.txt ../Files/dataBaseLEIualg1.txt
+ ../Files/logFileLEIualg1.txt }
+{ 2023-01-02T18:03:05.577737 EV @ ../Files/ConfigFile-UAlg-LEIualg1.txt ../Files/dataBaseLEIualg1.txt
+ ../Files/logFileLEIualg1.txt }
+{ 2023-01-02T22:58:58.458893 EV @ ../Files/ConfigFile-UAlg-LEIualg1.txt ../Files/dataBaseLEIualg1.txt
+ ../Files/logFileLEIualg1.txt }
