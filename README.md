@@ -15,7 +15,7 @@ POO - Construção de um sistema que monitorize e registe a informação sobre o
 
 SO - Implementação de um serviço que permita aos utilizadores armazenar uma cópia dos seus ficheiros de forma segura e eficiente, recorrendo a programas clientes e programas servidores para isso.
 
-**3ºano**
+**3ºano:**
 
 ADI - Análise e extração de dados de datasets utilizando o KNIME Analytics Platform.
 
