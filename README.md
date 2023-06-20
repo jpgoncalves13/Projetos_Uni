@@ -13,9 +13,11 @@ LI3(não presente) - Realização de vários guiões, envolvendo parsing, gestã
 
 POO - Construção de um sistema que monitorize e registe a informação sobre o consumo energético das habitações de uma comunidade em Java.
 
-SO - Implementação de um serviço que permita aos utilizadores armazenar uma cópia dos seus ficheiros de forma segura e eficiente, recorrendo a programas clientes e programas servidores para isso.
+SO - Implementação de um serviço que permita aos utilizadores armazenar uma cópia dos seus ficheiros de forma segura e eficiente, recorrendo a programas clientes e servidores para isso.
 
 **3ºano:**
+
+SD - Implementação de uma plataforma de gestão de uma frota de trotinetes elétricas, sob a forma de um par cliente-servidor em Java utilizando sockets e threads.
 
 ADI - Análise e extração de dados de datasets utilizando o KNIME Analytics Platform.
 
